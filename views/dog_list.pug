@@ -1,0 +1,20 @@
+html
+    head
+        title= dogSize + ' dogs'
+        style
+            include dog_style.css
+
+    body
+        h2= dogSize + ' dogs'
+
+        table
+            tr
+                th='Name'
+                th='Birthday'
+                th='Size'
+            for dog in dogs
+                tr
+                    td= dog.name
+                    td= dog.birthday
+                    td= dog.size
+

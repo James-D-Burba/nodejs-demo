@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node.js example</title>
+</head>
+
+<body>
+
+<h3>Register your dog for birthday acknowledgment!</h3>
+
+<form action="http://localhost:3000/add_dog" method="post">
+    <fieldset>
+        <legend>Add a dog</legend>
+        Dog's name <input type="text" name="dog_name" title="dog name"><br>
+        Dog's birthday: <input type="date" name="dog_birthday" title="date of birth of the dog"><br>
+        Dog size:
+        <select name="dog_size" title="dog size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <input type="submit">
+    </fieldset>
+</form>
+
+<form action="http://localhost:3000/view_dogs_by_size" method="post">
+    <fieldset>
+        <legend>Find dogs by size</legend>
+        <select name="dog_size" title="dog size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <input type="submit">
+    </fieldset>
+</form>
+
+<form action="http://localhost:3000/view_all_dogs" method="post">
+    <fieldset>
+        <legend>See all dogs</legend>
+        <input type="submit" value="See All">
+    </fieldset>
+</form>
+
+
+</body>
+</html>
